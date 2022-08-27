@@ -1,13 +1,14 @@
 ---
-title: Composables
+title: All Composables
 ---
-# How To
+
+# All Composables
+
+## How To
 ```
 import { useComposableName } from '#imports
 const composableName = useComposableName()
 ```
-
-# List
 
 ## 1. useAppManager
 ```js

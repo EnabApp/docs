@@ -4,7 +4,7 @@
     <div flex="~ gap-4" h="cuts">
       <Sidebar v-if="sidebarNavigations" :navs="sidebarNavigations" />
 
-      <div flex="~ grow" px="10" mb="10" overflow="y-scroll">
+      <div :class="[ sidebarNavigations ? 'flex basis-3/4' : 'flex w-full' ]"  px="10" mb="10" overflow="y-scroll">
         <NuxtPage />
       </div>
       

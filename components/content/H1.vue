@@ -1,9 +1,8 @@
 <template>
-  <h1 :id="id" flex="~ gap-4" mt="5" w="fit" class="group" items="center">
-    <a @click="copy()" ref="el" color="#fff" decoration="none" p="y-2" border="b dark hover:mid hover:b-dashed" :href="`#${id}`">
+  <h1 :id="id" flex="~ gap-4" mt="5" w="fit" items="center">
+    <a @click="copy()" ref="el" color="#fff" decoration="none" p="y-2" :href="`#${id}`">
       <slot />
     </a>
-    <div text="light" class="invisible group-hover:visible i-akar-icons-link-chain"></div>
   </h1>
 </template>
 

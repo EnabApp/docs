@@ -1,11 +1,11 @@
 <template>
     <div class="group" position="relative" p="" bg="w-5" m="y-5" dir="ltr" text="left" border="rounded-lg">
         <ClientOnly>
-            <div flex="~ gap-4" position="absolute" right="15" top="4" dir="rtl" text="white">
+            <div flex="~ gap-4" position="absolute" right="5" top="4" dir="rtl" text="white">
                 <span v-if="filename" bg="w-5" p="y-2 x-4"  border="rounded">
                     {{ filename }}
                 </span>
-                <span v-if="language" bg="w-5" p="y-2 x-4"  border="rounded">
+                <span v-if="language" bg="w-5" p="y-2 x-5"  border="rounded">
                     {{ language }}
                 </span>
                 <span @click="copy()" text="xl" class="invisible group-hover:visible" cursor="pointer" bg="w-5 hover:opacity-10" p="y-2 x-4"  border="rounded" flex="~" items="center">

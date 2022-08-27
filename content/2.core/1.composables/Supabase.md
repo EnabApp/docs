@@ -2,13 +2,15 @@
 title: Supabase
 ---
 
-# How To
+# Supabase
+
+## How To
 ```js
 import { useSupabaseClient } from '#imports
 const supabase = useSupabaseClient()
 ```
 
-# useSupabaseClient
+## useSupabaseClient
 ### 1. Fetch data (select)
 ```js
 // Fetch data from countries and select only id, name and cities
