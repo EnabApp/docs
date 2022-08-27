@@ -5,10 +5,10 @@
             <IconsExpanded v-if="show" />
             <IconsExpand v-else />
         </div>
-        <div v-if="item.children && show" border="l gray-800" ml="2" flex="~ col" pl="4">
+        <div v-if="item.children && show" border="l w-15" ml="2" flex="~ col gap-2" pl="4">
             <div v-for="link of item.children" :key="link._path" flex="~">
                 <NuxtLink
-                    :class="[ link._path == $route.href ? 'text-primary' : 'text-gray-500 hover:text-primary' ]"
+                    :class="[ link._path == $route.href ? 'text-primary' : 'text-w-50 hover:text-primary' ]"
                     font="semibold"
                     w="full"
                     h="full"

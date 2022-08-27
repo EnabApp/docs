@@ -4,9 +4,11 @@
     <div flex="~ gap-4" h="cuts">
       <Sidebar v-if="sidebarNavigations" :navs="sidebarNavigations" />
 
-      <div flex="~ grow" px="6">
+      <div flex="~ grow" px="6" mb="10" overflow="y-scroll">
         <NuxtPage />
       </div>
+      
+      <Contents :navs="sidebarNavigations" />
     </div>
   </main>
 </template>
@@ -23,3 +25,28 @@ const { data: navigation } = await useAsyncData('navigation', () => fetchContent
 const sidebarNavigations = computed(() => navigation.value.find(({ _path }) => _path === `/${currentRoute.params.slug[0]}`)?.children)
 
 </script>
+
+
+<style>
+::-webkit-scrollbar {
+  width: 7px;
+}
+ 
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #222;
+  /* outline: 1px solid slategrey; */
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333;
+}
+
+.prose{
+    color: rgb(171, 178, 191);
+}
+</style>
