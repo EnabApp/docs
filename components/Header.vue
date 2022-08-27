@@ -10,7 +10,7 @@
             <ContentNavigation v-slot="{ navigation }">
                 <div v-for="link of navigation" :key="link._path">
                     <NuxtLink
-                        :class="[ link._path == ('/' + firstSlug) ? 'text-white' : 'text-secondaryOp' ]"
+                        :class="[ link._path == ('/' + firstSlug) ? 'text-white' : 'text-w-40 hover:text-white' ]"
                         font="semibold"
                         w="full"
                         h="full"

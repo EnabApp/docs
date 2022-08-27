@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       // preload
-       theme: 'one-dark-pro'
+       theme: 'material-palenight'
     },
     markdown: {
       tags: {

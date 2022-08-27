@@ -27,5 +27,6 @@
 const props = defineProps(['item'])
 const show = ref(false)
 const showToggle = () => show.value = !show.value
+console.log(props.item)
 
 </script>

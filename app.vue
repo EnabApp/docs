@@ -4,11 +4,11 @@
     <div flex="~ gap-4" h="cuts">
       <Sidebar v-if="sidebarNavigations" :navs="sidebarNavigations" />
 
-      <div flex="~ grow" px="6" mb="10" overflow="y-scroll">
+      <div flex="~ grow" px="10" mb="10" overflow="y-scroll">
         <NuxtPage />
       </div>
       
-      <Contents :navs="sidebarNavigations" />
+      <Contents v-if="sidebarNavigations" :navs="sidebarNavigations" />
     </div>
   </main>
 </template>

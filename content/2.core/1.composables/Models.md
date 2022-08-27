@@ -1,0 +1,52 @@
+---
+title: Models
+---
+
+## 1. App
+```js
+STATES
+id: number
+name: string // Component name
+
+title: string
+icon: string
+minimized: boolean 
+maximized: boolean
+size: string
+zIndex: string
+
+running: boolean
+booting: boolean
+
+owned: boolean
+core: boolean
+points: number
+
+services: Service[]
+
+ACTIONS
+open: () => void // Open app
+toggleRunning: () => void // Toggle app running
+toggleMinimized: () => void // Toggle app minimized
+toggleMaximized: () => void // Toggle app maximized
+
+GETTERS
+getService: (service_id: number) => Service // Get service by service id
+getOwnedServices: () => Service[] // Get all owned services
+getUnownedServices: () => Service[] // Get all unowned services
+getAllServices: () => Service[] // Get all services
+```
+
+## 2. Service
+```js
+STATES
+id: number;
+app_id: number;
+
+title: string;
+description: string;
+icon: string;
+
+owned: boolean;
+points: number;
+```

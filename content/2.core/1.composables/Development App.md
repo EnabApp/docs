@@ -1,3 +1,7 @@
+---
+title: Development App
+---
+
 # Instructions
 1. Make new app component at `playground/components`. E.g. `playground/components/TestApp.vue`. Be sure it has the basic structure as below:
 2. Make new app component at `playground/components`. E.g. `playground/components/TestApp.vue`. Be sure it has the basic structure as below:

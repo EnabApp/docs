@@ -1,3 +1,7 @@
+---
+title: Supabase
+---
+
 # How To
 ```js
 import { useSupabaseClient } from '#imports
