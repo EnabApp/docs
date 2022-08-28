@@ -27,6 +27,7 @@ export default defineNuxtConfig({
         h6: 'H6',
         p: 'P',
         a: 'Anchor',
+        hr: 'Hr'
       }
     }
   },

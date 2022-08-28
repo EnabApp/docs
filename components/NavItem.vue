@@ -33,6 +33,7 @@ onMounted(() => {
     props.item.children.find(({ _path }) => _path == route.href)
         ? show.value = true
         : show.value = false
+    console.log(show.value)
 })
 
 
