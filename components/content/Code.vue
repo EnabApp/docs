@@ -1,5 +1,5 @@
 <template>
-    <div class="group" position="relative" p="" bg="w-5" m="y-5" dir="ltr" text="left" border="rounded-lg">
+    <div class="group" position="relative" p="" bg="w-5" m="t-5 b-10" dir="ltr" text="left" border="rounded-lg">
         <ClientOnly>
             <div flex="~ gap-4" position="absolute" right="5" top="4" dir="rtl" text="white">
                 <span v-if="filename" bg="w-5" p="y-2 x-4"  border="rounded">
@@ -13,7 +13,7 @@
                     <div v-else class="i-fa6-solid-clipboard"></div>
                 </span>
             </div>
-            <div un-text="xl white">
+            <div un-text="xl white" flex="~" items="center">
                 <slot />
             </div>
         </ClientOnly>
@@ -37,10 +37,10 @@ const copied = ref(false)
 <style>
 pre code .line {
   display: block;
-  min-height: 1rem;
+  min-height: 2rem;
 }
 
 .prose :where(code):not(:where(.not-prose,.not-prose *)){
-    color: rgb(96, 104, 117);
+    color: rgb(255, 255, 255);
 }
 </style>
