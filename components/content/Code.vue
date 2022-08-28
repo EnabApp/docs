@@ -13,7 +13,7 @@
                     <div v-else class="i-fa6-solid-clipboard"></div>
                 </span>
             </div>
-            <div un-text="xl white" flex="~" items="center">
+            <div un-text="md white" flex="~" items="center">
                 <slot />
             </div>
         </ClientOnly>
@@ -37,7 +37,7 @@ const copied = ref(false)
 <style>
 pre code .line {
   display: block;
-  min-height: 2rem;
+  min-height: 1.5;
 }
 
 .prose :where(code):not(:where(.not-prose,.not-prose *)){

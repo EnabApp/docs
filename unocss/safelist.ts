@@ -11,15 +11,7 @@ export const safelist = [
     })(),
     // Icons
     ...[
-      'i-ic-baseline-calculate',
-      'i-bxs-cart',
-      'i-ri-todo-fill',
-      'i-ci-settings-filled',
-      'i-ic-baseline-check-box-outline-blank',
-      'i-ic-baseline-check-box',
-      'i-fluent-wallet-credit-card-20-filled',
-      'i-fluent-radio-button-24-filled',
-      'i-fluent-radio-button-24-regular',
+      'i-material-symbols-info-outline',
     ],
     
 ]
