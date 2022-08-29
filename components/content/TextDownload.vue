@@ -1,14 +1,26 @@
 <template>
-    <ProseCode language="ts" :code="highlighted">
-        <div v-html="highlighted"></div>
+    <ProseCode :language="extension" :filename="filename" :url="url" :code="highlighted">
+        <div v-html="highlighted" w="full"></div>
     </ProseCode>
 </template>
 <script setup>
 import { getHighlighter } from 'shiki-es'
 const props = defineProps(['url'])
 const { data } = await useAsyncData(props.url, () => $fetch(props.url))
+const filenameWithExtension = props.url.split('/').pop()
+const filename = filenameWithExtension.split('.').slice(0, -1).join('.')
+const fixExtension = (ext) => {
+    switch(ext){
+        case 'yml':
+            return 'yaml'
+        default:
+            return ext
+    }
+}
+const extension = fixExtension(filenameWithExtension.split('.').pop())
+
 const highlighter = await getHighlighter({ theme: 'material-palenight',  })
-const highlighted = highlighter.codeToHtml(data.value, { lang: 'ts' })
+const highlighted = highlighter.codeToHtml(data.value, { lang: extension })
 </script>
 
 <style>
