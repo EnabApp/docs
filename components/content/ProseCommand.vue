@@ -8,7 +8,7 @@
                 </div>
             </div>
         </div>
-        <span bg="w-5" p="x-2" text="sm" border="~ w-5 rounded">
+        <span bg="w-5" p="y-1 x-2" text="xs" border="~ w-5 rounded">
             {{ language }}
         </span>
     </div>

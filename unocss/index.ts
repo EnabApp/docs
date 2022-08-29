@@ -15,6 +15,7 @@ export const uno: UnocssNuxtOptions = {
       provider: 'google',
       fonts: {
         sans: ['Cairo:200,300,400,500,600,700,800,900'],
+        serif: ['Inter:100,200,300,400,500,600,700,800,900'],
       },
     },
     safelist: safelist,
@@ -25,7 +26,7 @@ export const uno: UnocssNuxtOptions = {
             * {
               padding: 0;
               margin: 0;
-              font-family: ${theme['fontFamily']['sans']};
+              font-family: ${theme['fontFamily']['serif']};
             }
             body {
                 overflow: hidden;

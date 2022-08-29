@@ -1,5 +1,5 @@
 <template>
-    <aside flex="~ col gap-2" w="1/5" py="4">
+    <aside flex="~ col gap-4" w="1/5" py="4">
         <NavItem :item="nav" v-for="nav of navs" :key="nav._path" />
     </aside>
 </template>
