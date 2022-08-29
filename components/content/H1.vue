@@ -1,5 +1,5 @@
 <template>
-  <h1 :id="id" flex="~ gap-4" mt="5" w="fit" items="center">
+  <h1 :id="id" flex="~ gap-4" mt="8" w="fit" items="center">
     <a @click="copy()" ref="el" color="#fff" decoration="none" p="y-2" :href="`#${id}`">
       <slot />
     </a>
