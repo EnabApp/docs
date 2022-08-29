@@ -14,7 +14,6 @@
                         font="semibold"
                         w="full"
                         h="full"
-                        un-text="lg"
                         decoration="none"
                         :key="link._path"
                         :to="link._path"
