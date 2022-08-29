@@ -1,5 +1,5 @@
 <template>
-    <aside flex="~ col gap-2" w="1/4" py="4">
+    <aside flex="~ col gap-2" w="1/4" py="4"  overflow="y-scroll">
         <span font="bold" un-text="xl white" mb="3">Table of Contents</span>
         <ClientOnly>
             <div>

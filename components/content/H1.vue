@@ -1,6 +1,6 @@
 <template>
-  <h1 :id="id" flex="~ gap-4" mt="8" w="fit" items="center">
-    <a @click="copy()" ref="el" color="#fff" decoration="none" p="y-2" :href="`#${id}`">
+  <h1 :id="id" flex="~ gap-4" mt="4" w="fit" items="center">
+    <a @click="copy()" ref="el" color="#fff" font="bold" decoration="none" :href="`#${id}`">
       <slot />
     </a>
   </h1>
