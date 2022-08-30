@@ -2,7 +2,7 @@
     <div flex="~ col gap-2" :class="styleColor" border="~ w-5 rounded-lg" p="x-8 y-6">
        <div v-if="icon" w="10" h="10" :class="[icon]"></div>
        <span v-if="title" un-text="xl" font="bold">{{ title }}</span>
-       <p un-text="lg" m="0"><slot /></p>
+       <p un-text="" m="0"><slot /></p>
     </div>
 </template>
 

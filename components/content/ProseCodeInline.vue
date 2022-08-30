@@ -10,7 +10,7 @@ const props = defineProps(['color', 'label'])
 const styleColor = computed( () => {
     switch (props.color){
         case 'success':
-            return 'text-white'
+            return 'text-success'
         case 'error':
             return 'text-error'
         case 'warning':

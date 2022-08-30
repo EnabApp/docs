@@ -24,7 +24,7 @@ const contents = ref(null)
 
 const getContents = async (r) => {
     const { data } = await useAsyncData('contents-' + r.params.slug?.join('-'), () => queryContent(...r.params.slug).findOne())
-    contents.value = data.value.excerpt?.children.filter(({ tag }) => tag == 'h2' || tag == 'h1').map(
+    contents.value = data.value?.excerpt?.children.filter(({ tag }) => tag == 'h2' || tag == 'h1').map(
         (element) => {
             return {
                 title: element.children[0].value,

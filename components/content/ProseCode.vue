@@ -11,7 +11,7 @@
                 <span v-if="language" bg="w-5" p="y-1 x-2"  border="~ w-5 rounded">
                     {{ language }}
                 </span>
-                <span @click="previewToggle()" v-if="language == 'html' || language == 'vue'"  w="4" h="4" cursor="pointer" :class="[ previewState ? 'bg-w-20 hover:bg-opacity-30' : 'bg-w-5 hover:bg-opacity-10']" p="y-1 x-2"  border="~ w-5 hover:w-10 rounded" flex="~" justify="center" items="center">
+                <span @click="previewToggle()" v-if="language == 'html'"  w="4" h="4" cursor="pointer" :class="[ previewState ? 'bg-w-20 hover:bg-opacity-30' : 'bg-w-5 hover:bg-opacity-10']" p="y-1 x-2"  border="~ w-5 hover:w-10 rounded" flex="~" justify="center" items="center">
                     <div v-if="previewState" class="i-mdi-eye-off"></div>
                     <div v-else class="i-ic-baseline-remove-red-eye"></div>
                 </span>
@@ -21,7 +21,7 @@
                 </span>
             </div>
             <div un-text="md white" p="6" flex="~ col" items="start">
-                <div v-if="previewState && (language == 'html' || language == 'vue')"
+                <div v-if="previewState && (language == 'html')"
                     bg="primary"
                     p="4"
                     border="rounded-lg"
