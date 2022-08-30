@@ -8,10 +8,13 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.0.1",
+    "@vueuse/core": "^9.1.1",
+    "@vueuse/nuxt": "^9.1.1",
     "nuxt": "^3.0.0-rc.4"
   },
   "dependencies": {
-    "@enab/ui": "^1.4.93",
+    "@enab/core": "^1.8.21-beta.1",
+    "@enab/ui": "^1.4.94-beta.4",
     "@unocss/nuxt": "^0.45.13",
     "shiki": "^0.11.1"
   }

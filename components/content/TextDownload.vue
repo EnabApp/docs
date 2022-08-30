@@ -1,5 +1,5 @@
 <template>
-    <ProseCode :language="extension" :filename="filename" :url="url" :code="highlighted">
+    <ProseCode :language="extension" :filename="filename" :url="url" :code="data">
         <div v-html="highlighted" w="full"></div>
     </ProseCode>
 </template>
