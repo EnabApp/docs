@@ -16,7 +16,7 @@
                         h="full"
                         decoration="none"
                         :key="link._path"
-                        :to="link._path"
+                        :to="link.children ? (link.children[0] && link.children[0].children && link.children[0].children[0]._path) : link._path"
                     >
                         {{ link.title }}
                     </NuxtLink>
