@@ -20,11 +20,11 @@
 <script setup>
 const props = defineProps(['item'])
 const route = useRoute()
-const show = ref(false)
+const show = ref(true)
 const showToggle = () => show.value = !show.value
 
-props.item.children.find(({ _path }) => _path == route.href)
-    ? show.value = true
-    : show.value = false
+// props.item.children.find(({ _path }) => _path == route.href)
+//     ? show.value = true
+//     : show.value = false
 
 </script>
