@@ -11,7 +11,7 @@
                 <span v-if="language" bg="w-5" p="y-1 x-2"  border="~ w-5 rounded">
                     {{ language }}
                 </span>
-                <span @click="previewToggle()" v-if="language == 'html'"  w="4" h="4" cursor="pointer" :class="[ previewState ? 'bg-w-20 hover:bg-opacity-30' : 'bg-w-5 hover:bg-opacity-10']" p="y-1 x-2"  border="~ w-5 hover:w-10 rounded" flex="~" justify="center" items="center">
+                <span @click="previewToggle()" v-if="language == 'html' && !code.includes('<!---->')"  w="4" h="4" cursor="pointer" :class="[ previewState ? 'bg-w-20 hover:bg-opacity-30' : 'bg-w-5 hover:bg-opacity-10']" p="y-1 x-2"  border="~ w-5 hover:w-10 rounded" flex="~" justify="center" items="center">
                     <div v-if="previewState" class="i-mdi-eye-off"></div>
                     <div v-else class="i-ic-baseline-remove-red-eye"></div>
                 </span>
@@ -37,7 +37,7 @@
 
 
 <script setup>
-const props = defineProps(['filename', 'language', 'code', 'highlights', 'url'])
+const props = defineProps(['filename', 'language', 'code', 'highlights', 'url', 'color'])
 const copy = () => {
     navigator.clipboard.writeText(props.code)
     copied.value = true
