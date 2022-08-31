@@ -1,5 +1,5 @@
 <template>
-    <span bg="w-10" p="y-1 x-2" un-text="sm" :class="styleColor" border="rounded" mx="0.5">
+    <span bg="w-5" p="y-1 x-2" un-text="sm" :class="styleColor" border="rounded" mx="0.5">
         <slot />
     </span>
 </template>

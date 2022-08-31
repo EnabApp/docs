@@ -6,9 +6,9 @@
             <div w="20" h="20" class="i-line-md-loading-loop"></div>
           </template>
           <div v-if="$route.path !== '/'">
-            <h1 un-text="5xl white" mt="6">{{ doc.title }}</h1>
+            <h1 un-text="4xl white" mt="5">{{ doc.title }}</h1>
             <p un-text="w-70" leading="1.5rem" mt="3" v-html="doc.description"></p>
-            <hr border="0 b-1 w-15" m="t-8 b-10" />
+            <hr border="0 b-1 w-5" m="t-8 b-10" />
           </div>
           <ContentRenderer class="prose prose-gray dark:prose-invert max-w-none" w="full" :value="doc">
             <template #empty>

@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div py="1" cursor="pointer" flex="~" justify="between" items="center" un-text="secondaryOp hover:secondary" font="bold" @click="showToggle()">
-            <span un-text="white lg">{{  item.title  }}</span>
+        <div py="1" mb="2" cursor="pointer" flex="~" justify="between" items="center" un-text="secondaryOp hover:secondary" font="semibold" @click="showToggle()">
+            <span un-text="white">{{  item.title  }}</span>
             <IconsExpanded v-if="show" />
             <IconsExpand v-else />
         </div>
@@ -23,12 +23,8 @@ const route = useRoute()
 const show = ref(false)
 const showToggle = () => show.value = !show.value
 
-onMounted(() => {
-    props.item.children.find(({ _path }) => _path == route.href)
-        ? show.value = true
-        : show.value = false
-    console.log(show.value)
-})
-
+props.item.children.find(({ _path }) => _path == route.href)
+    ? show.value = true
+    : show.value = false
 
 </script>

@@ -30,7 +30,7 @@ export const uno: UnocssNuxtOptions = {
             }
             body {
                 overflow: hidden;
-                background-color: #000;
+                background-color: rgb(12, 12, 13);
                 color: ${theme['colors']['gray']['700']};
             }
           `
