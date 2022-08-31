@@ -1,7 +1,7 @@
 <template>
     <div>
         <ClientOnly>
-            <aside v-if="cond()" position="absolute lg:relative" z="10" bg="black lg:transparent" flex="col gap-3" h="full lg:auto" w="full lg:1/5" py="4">
+            <aside v-if="cond()" position="absolute lg:relative" z="10" bg="black lg:transparent" flex="~ col gap-3" h="full lg:auto" w="full lg:1/5" py="4">
                 <NavItem :item="nav" v-for="nav of navs" :key="nav._path" />
             </aside>
         </ClientOnly>
