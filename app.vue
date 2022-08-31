@@ -7,7 +7,7 @@
           notMobile
             ? (sidebarNavigations ? 'flex basis-3/4' : 'flex w-full')
             : ''
-        ]"  px="0 lg:10" mb="0 lg:10" overflow="y-scroll">
+        ]"  px="6 lg:10" mb="0 lg:10" overflow="y-scroll">
         <NuxtPage />
       </div>
       
