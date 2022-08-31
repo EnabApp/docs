@@ -9,9 +9,10 @@
     margin-bottom: 0.4rem;
   }
   ul > li:before {
-    content: '●';
+    content: '•';
     color: rgba(255, 255, 255, 0.2);
     margin-right: 1rem;
+    /* margin-left: 1rem; */
   }
 </style>
 <!-- <style scoped>
