@@ -1,28 +1,17 @@
 <template>
     <div>
         <div py="1" cursor="pointer" flex="~" justify="between" items="center" un-text="secondaryOp hover:secondary" font="bold" @click="showToggle()">
-            <span un-text="white lg">{{ item.title }}</span>
+            <span un-text="white lg">{{  item.title  }}</span>
             <IconsExpanded v-if="show" />
             <IconsExpand v-else />
         </div>
         <div v-if="item.children && show" flex="~ col" ml="2">
-            <div
-                v-for="link of item.children"
-                :class="[ link._path == $route.href ? 'border-l border-info-200' : 'border-l border-w-15' ]"
-                pl="4"
-                py="1.5"
-                :key="link._path" flex="~">
-                <NuxtLink
-                    :class="[ link._path == $route.href ? 'text-info-200' : 'text-w-50 hover:text-info-200' ]"
-                    un-text="sm"
-                    w="full"
-                    h="full"
-                    decoration="none"
-                    :key="link._path"
-                    :to="link._path"
-                >
-                {{ link.title }}
-                </NuxtLink>
+            <div v-for="link of item.children" :key="link._path">
+                <div v-if="link._path.split('/').length > 3" :class="[link._path == $route.href ? 'border-l border-info-200' : 'border-l border-w-15']" pl="4" py="1.5" flex="~">
+                    <NuxtLink :class="[link._path == $route.href ? 'text-info-200' : 'text-w-50 hover:text-info-200']" un-text="sm" w="full" h="full" decoration="none" :key="link._path" :to="link._path">
+                        {{  link.title  }}
+                    </NuxtLink>
+                </div>
             </div>
         </div>
     </div>
