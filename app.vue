@@ -48,4 +48,20 @@ const sidebarNavigations = computed(() => navigation.value.find(({ _path }) => _
 .prose{
     color: rgb(171, 178, 191);
 }
+
+ul > li {
+    list-style-type: none;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+ul > li:before {
+  content: '•';
+  color: rgba(255, 255, 255, 0.2);
+  margin-right: 1rem;
+  /* margin-left: 1rem; */
+}
+ol > li {
+  margin: 0.2rem 0;
+  line-height: 2rem;
+}
 </style>
