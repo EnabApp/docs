@@ -16,7 +16,7 @@ const [mobileMenuState, mobileMenuToggle] = useToggle(false)
 
 const breakpoints = useBreakpoints(breakpointsTailwind)
 
-const notMobile = breakpoints.isGreater('lg')
+const notMobile = breakpoints.isGreater('sm')
 const isMobile = computed( () => !notMobile)
 
 const mobileSidebar = useMobileSidebar()
