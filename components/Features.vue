@@ -1,6 +1,6 @@
 <template>
-    <h1 my="10" un-text="white" font="bold">Powerful Features</h1>
-    <div grid="~ cols-3 gap-6">
+    <h1 p="6 lg:0" my="lg:10" un-text="white" font="bold">Powerful Features</h1>
+    <div p="6 lg:0" grid="~ cols-1 lg:cols-3 gap-6">
         <Card 
             title="Bring you happiness"
             icon="i-material-symbols-add-reaction-rounded"
