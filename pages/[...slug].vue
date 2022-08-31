@@ -2,15 +2,15 @@
     <div w="full">
       <ContentDoc v-slot="{ doc }">
         <ClientOnly>
+          <template #not-found>
+            <div w="20" h="20" class="i-line-md-loading-loop"></div>
+          </template>
           <div v-if="$route.path !== '/'">
             <h1 un-text="5xl white" mt="8">{{ doc.title }}</h1>
             <p un-text="w-70" leading="1.5rem" mt="4" v-html="doc.description"></p>
             <hr border="0 b-1 w-15" my="10" />
           </div>
           <ContentRenderer class="prose prose-gray dark:prose-invert max-w-none" w="full" :value="doc">
-            <template #not-found>
-              <div w="20" h="20" class="i-line-md-loading-loop"></div>
-            </template>
             <template #empty>
               <div flex="~ col" align="center">
                 <h1 class="text-2xl">
