@@ -1,5 +1,5 @@
 <template>
-    <a :href="href" un-text="secondary hover:primary">
+    <a :href="href" decoration="none" un-text="secondary hover:primary">
         <slot />
     </a>
 </template>
