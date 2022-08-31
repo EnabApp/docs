@@ -34,8 +34,9 @@
     
     
             <!-- Mobile Customization -->
-            <div class="flex lg:hidden" justify="end">
-                <div @click="mobileMenuToggle()" h="10" w="10" un-text="secondary active:primary hover:primary" class="i-material-symbols-menu"></div>
+            <div class="flex gap-3 lg:hidden" justify="end">
+                <div @click="toggleMobileSidebar()" h="8" w="8" un-text="secondary active:primary hover:primary" class="i-ri-menu-fold-fill"></div>
+                <div @click="mobileMenuToggle()" h="8" w="8" un-text="secondary active:primary hover:primary" class="i-ri-menu-line"></div>
             </div>
     
             
@@ -83,6 +84,11 @@ const chooseLink = (link) => {
 }
 
 const [mobileMenuState, mobileMenuToggle] = useToggle(false)
+
+const mobileSidebar = useMobileSidebar()
+const toggleMobileSidebar = () => {
+    mobileSidebar.value = !mobileSidebar.value
+}
 </script>
 
 <style scoped>

@@ -6,8 +6,8 @@
       <div :class="[
           notMobile
             ? (sidebarNavigations ? 'flex basis-3/4' : 'flex w-full')
-            : 'flex w-full'
-        ]"  px="10" mb="10" overflow="y-scroll">
+            : ''
+        ]"  px="0 lg:10" mb="0 lg:10" overflow="y-scroll">
         <NuxtPage />
       </div>
       

@@ -3,7 +3,7 @@
     <a @click="copy()" ref="el" color="#fff" decoration="none" p="y-2" :href="`#${id}`">
       <slot />
     </a>
-    <div text="light" class="invisible group-hover:visible i-akar-icons-link-chain"></div>
+    <div text="light" class="hidden lg:blockinvisible group-hover:visible i-akar-icons-link-chain"></div>
   </h5>
 </template>
 

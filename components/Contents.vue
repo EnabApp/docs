@@ -1,7 +1,7 @@
 <template>
-    <div z="10"  position="absolute lg:relative" p="4 lg:0" bg="black lg:transparent" w="full lg:1/4" overflow="y-scroll">
+    <div v-if="notMobile" w="full lg:1/4">
         <ClientOnly>
-            <aside flex="~ col gap-2" w="full" py="4">
+            <aside flex="~ col gap-2" py="4" overflow="y-scroll">
                 <span font="bold" un-text="xl white" mb="3">Table of Contents</span>
                     <div flex="~ col gap-3">
                         <div v-for="element in contents" :key="element.id">
