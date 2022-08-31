@@ -1,5 +1,5 @@
 <template>
-    <aside flex="~ col gap-2" w="1/4" py="4" class="invisible lg:visible" overflow="y-scroll">
+    <aside flex="col gap-2" w="1/4" py="4" class="hidden lg:flex" overflow="y-scroll">
         <ClientOnly>
             <span font="bold" un-text="xl white" mb="3">Table of Contents</span>
             <div flex="~ col gap-3">

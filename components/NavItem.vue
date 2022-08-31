@@ -8,7 +8,7 @@
         <div v-if="item.children && show" flex="~ col" ml="2">
             <div v-for="link of item.children" :key="link._path">
                 <div v-if="link._path.split('/').length > 3" :class="[link._path == $route.href ? 'border-l border-info-200' : 'border-l border-w-15']" pl="4" py="1.5" flex="~">
-                    <NuxtLink :class="[link._path == $route.href ? 'text-info-200' : 'text-w-50 hover:text-info-200']" un-text="sm" w="full" h="full" decoration="none" :key="link._path" :to="link._path">
+                    <NuxtLink @click="toggleMobileSidebar()" :class="[link._path == $route.href ? 'text-info-200' : 'text-w-50 hover:text-info-200']" un-text="sm" w="full" h="full" decoration="none" :key="link._path" :to="link._path">
                         {{  link.title  }}
                     </NuxtLink>
                 </div>
@@ -26,5 +26,10 @@ const showToggle = () => show.value = !show.value
 // props.item.children.find(({ _path }) => _path == route.href)
 //     ? show.value = true
 //     : show.value = false
+
+const mobileSidebar = useMobileSidebar()
+const toggleMobileSidebar = () => {
+    mobileSidebar.value = !mobileSidebar.value
+}
 
 </script>
