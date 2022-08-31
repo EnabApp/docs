@@ -36,6 +36,7 @@
             <!-- Mobile Customization -->
             <div class="flex gap-3 lg:hidden" justify="end">
                 <div @click="toggleMobileSidebar()" h="8" w="8" un-text="secondary active:primary hover:primary" class="i-ri-menu-fold-fill"></div>
+                {{mobileSidebar}}
                 <div @click="mobileMenuToggle()" h="8" w="8" un-text="secondary active:primary hover:primary" class="i-ri-menu-line"></div>
             </div>
     
