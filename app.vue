@@ -1,6 +1,6 @@
 <template>
   <main class="px-1 mx-auto max-w-full lg:max-w-7xl lg:px-6" h="screen">
-    <Header />
+    <Header :hasNavigations="sidebarNavigations?.length > 0" />
     <div flex="~ gap-4" position="relative" h="cuts">
       <Sidebar v-if="sidebarNavigations" :navs="sidebarNavigations" />
       <div :class="[

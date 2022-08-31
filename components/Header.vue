@@ -35,8 +35,7 @@
     
             <!-- Mobile Customization -->
             <div class="flex gap-3 lg:hidden" justify="end">
-                <div @click="toggleMobileSidebar()" h="8" w="8" un-text="secondary active:primary hover:primary" class="i-ri-menu-fold-fill"></div>
-                {{mobileSidebar}}
+                <div v-if="hasNavigations" @click="toggleMobileSidebar()" h="8" w="8" un-text="secondary active:primary hover:primary" class="i-ri-menu-fold-fill"></div>
                 <div @click="mobileMenuToggle()" h="8" w="8" un-text="secondary active:primary hover:primary" class="i-ri-menu-line"></div>
             </div>
     
@@ -70,6 +69,7 @@
 </template>
 
 <script setup>
+const props = defineProps(['hasNavigations'])
 const route = useRoute
 const currentRoute = await route()
 const firstSlug = computed( () => currentRoute.params.slug[0] || "")
