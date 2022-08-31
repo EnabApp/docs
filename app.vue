@@ -1,9 +1,13 @@
 <template>
-  <main class="px-1 mx-auto max-w-7xl sm:px-3 lg:px-6" h="screen">
+  <main class="px-1 mx-auto max-w-full lg:max-w-7xl lg:px-6" h="screen">
     <Header />
-    <div flex="~ gap-4" h="cuts">
+    <div flex="~ gap-4" position="relative" h="cuts">
       <Sidebar v-if="sidebarNavigations" :navs="sidebarNavigations" />
-      <div :class="[ sidebarNavigations ? 'flex basis-3/4' : 'flex w-full' ]"  px="10" mb="10" overflow="y-scroll">
+      <div :class="[
+          notMobile
+            ? (sidebarNavigations ? 'flex basis-3/4' : 'flex w-full')
+            : 'flex w-full'
+        ]"  px="10" mb="10" overflow="y-scroll">
         <NuxtPage />
       </div>
       
@@ -14,6 +18,8 @@
 
 
 <script setup>
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
+
 const route = useRoute
 const currentRoute = await route()
 
@@ -22,6 +28,11 @@ const { data: navigation } = await useAsyncData('navigation', () => fetchContent
 
 // Getting current page navigations
 const sidebarNavigations = computed(() => navigation.value.find(({ _path }) => _path === `/${currentRoute.params.slug[0]}`)?.children)
+
+
+const breakpoints = useBreakpoints(breakpointsTailwind)
+
+const notMobile = breakpoints.isGreater('lg')
 
 </script>
 
