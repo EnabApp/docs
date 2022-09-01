@@ -7,8 +7,8 @@
                     <a v-if="element.tag == 'h1'" :href="`#${element.id}`" decoration="none" font="bold" un-text="w-80 hover:primary" class="group my-4">
                         {{  element.title  }}
                     </a>
-                    <a v-if="element.tag == 'h2'" :href="`#${element.id}`" decoration="none" un-text="sm w-50 hover:primary" class="group">
-                        <span un-text="w-10 group-hover:w-50">#</span> {{  element.title  }}
+                    <a v-if="element.tag == 'h2'" :href="`#${element.id}`" :class="hashedRoute == element.id ? 'text-info' : 'text-w-50 hover:text-primary'" decoration="none" un-text="sm" class="group">
+                        <span :class="hashedRoute == element.id ? 'text-info' : 'text-w-10 group-hover:text-w-50'">#</span> {{  element.title  }}
                     </a>
                 </div>
             </div>
@@ -20,6 +20,8 @@
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 
 const route = useRoute()
+const hashedRoute = computed( () => route.href.split('#')[1])
+
 
 const contentQuery = ref(null)
 const contents = ref(null)
