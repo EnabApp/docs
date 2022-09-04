@@ -3,8 +3,9 @@ import { uno } from './unocss/index'
  
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  // ssr: false,
+
   modules: [
-    '@enab/ui',
     '@enab/core',
     '@nuxt/content',
     '@unocss/nuxt',
@@ -15,6 +16,7 @@ export default defineNuxtConfig({
     global: true,
     dirs: ['~/components']
   },
+
   hooks: {
     'vite:extendConfig': (config, { isClient, isServer }) => {
       if (isClient)
@@ -26,9 +28,6 @@ export default defineNuxtConfig({
     isCore: false
   },
 
-  Ui: {
-    isCore: false
-  },
 
   // UnoCSS Configurations
   unocss: uno,
