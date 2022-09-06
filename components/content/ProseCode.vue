@@ -12,8 +12,8 @@
                     {{ language }}
                 </span>
                 <span @click="previewToggle()" v-if="language == 'html' && !code.includes('<!---->')"  w="4" h="4" cursor="pointer" :class="[ previewState ? 'bg-w-20 hover:bg-opacity-30' : 'bg-w-5 hover:bg-opacity-10']" p="y-1 x-2"  border="~ w-5 hover:w-10 rounded" flex="~" justify="center" items="center">
-                    <IconsEyeOff v-if="previewState" class="i-mdi-eye-off"></IconsEyeOff>
-                    <IconsEyeOff v-else class="i-ic-baseline-remove-red-eye"></IconsEyeOff>
+                    <IconsEyeOff v-if="previewState" ></IconsEyeOff>
+                    <IconsEyeOn v-else ></IconsEyeOn>
                 </span>
                 <span @click="copy()" w="2" h="4" class="invisible group-hover:visible" cursor="pointer" bg="w-5 hover:opacity-10" p="y-1 x-2"  border="~ w-5 hover:w-10 rounded" flex="~" items="center">
                     <IconsClipboardCheck v-if="copied" class="i-fa6-solid-clipboard-check"></IconsClipboardCheck>
