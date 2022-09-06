@@ -71,4 +71,25 @@ ol > li {
   margin: 0.2rem 0;
   line-height: 2rem;
 }
+
+
+table {
+  border-collapse: separate !important;
+  border-spacing: 5px 0px !important;
+}
+
+th {
+  background-color: rgba(255,255,255, 0.05);
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+}
+tr:nth-child(even) {
+  background-color: transparent!important;
+}
+
+th, td {
+  border: 0 !important;
+}
+
+
 </style>
