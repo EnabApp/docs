@@ -10,10 +10,10 @@
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
     "@vueuse/core": "^9.1.1",
     "@vueuse/nuxt": "^9.1.1",
-    "nuxt": "npm:nuxt3@latest"
+    "nuxt": "3.0.0-rc.8"
   },
   "dependencies": {
-    "@enab/core": "^1.8.22-beta.11",
+    "@enab/core": "^1.8.22-beta.13",
     "@unocss/nuxt": "^0.45.13",
     "shiki": "^0.11.1"
   }
