@@ -13,7 +13,7 @@
     "nuxt": "3.0.0-rc.8"
   },
   "dependencies": {
-    "@enab/core": "^1.8.22-beta.13",
+    "@enab/core": "^1.8.22-beta.15",
     "@unocss/nuxt": "^0.45.13",
     "shiki": "^0.11.1"
   }

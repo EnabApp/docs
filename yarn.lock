@@ -294,10 +294,10 @@
   dependencies:
     mime "^3.0.0"
 
-"@enab/core@^1.8.22-beta.13":
-  version "1.8.22-beta.13"
-  resolved "https://registry.yarnpkg.com/@enab/core/-/core-1.8.22-beta.13.tgz#35a378c30b105af1b3dcdee7f6a67d4477da48a3"
-  integrity sha512-S0xudk2KJHkTTT77YhLSFbLpM4axB0TKaKyKOKreKge7B+ngSGR7y+6kfa9MabkihknmHHbVTid4kQyKo8WBKQ==
+"@enab/core@^1.8.22-beta.15":
+  version "1.8.22-beta.15"
+  resolved "https://registry.yarnpkg.com/@enab/core/-/core-1.8.22-beta.15.tgz#44f8150e183b7c6c706ee878d405f4190bb43386"
+  integrity sha512-jxl6ZVInvNzhK+8VlZkdJYGTCHtXcTm2PYU8PV32aw4Up+UbJ/VhYQl7pXHlGFIesn5IGnyem6Y8xb0FYb9dFw==
   dependencies:
     "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
 

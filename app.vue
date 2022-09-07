@@ -1,13 +1,9 @@
 <template>
   <main class="px-1 mx-auto max-w-full lg:max-w-7xl lg:px-6" h="screen">
     <Header :hasNavigations="sidebarNavigations?.length > 0" />
-    <div flex="~ gap-4" position="relative" h="cuts">
+    <div flex="~ gap-4" justify="between" position="relative" h="cuts">
       <Sidebar v-if="sidebarNavigations" :navs="sidebarNavigations" />
-      <div :class="[
-          notMobile
-            ? (sidebarNavigations ? 'flex basis-3/4' : 'flex w-full')
-            : ''
-        ]"  px="6 lg:10" mb="0 lg:10" overflow="y-scroll">
+      <div flex="grow" px="6 lg:10" mb="0 lg:10" overflow="y-scroll">
         <NuxtPage />
       </div>
       
@@ -75,4 +71,25 @@ ol > li {
   margin: 0.2rem 0;
   line-height: 2rem;
 }
+
+
+table {
+  border-collapse: separate !important;
+  border-spacing: 5px 0px !important;
+}
+
+th {
+  background-color: rgba(255,255,255, 0.05);
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+}
+tr:nth-child(even) {
+  background-color: transparent!important;
+}
+
+th, td {
+  border: 0 !important;
+}
+
+
 </style>

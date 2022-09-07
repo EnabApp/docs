@@ -1,6 +1,6 @@
 <template>
     <ClientOnly>
-        <div h="full lg:auto" v-if="cond()" z="10" bg="black lg:transparent" position="absolute lg:relative" w="full lg:1/5">
+        <div h="full lg:auto" min-w="full lg:200px" v-if="cond()" z="10" bg="black lg:transparent" position="absolute lg:relative">
             <aside flex="~ col gap-3" px="6 lg:0" py="6 lg:4">
                 <NavItem :item="nav" v-for="nav of navs" :key="nav._path" />
             </aside>

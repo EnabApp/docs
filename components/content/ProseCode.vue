@@ -11,25 +11,26 @@
                 <span v-if="language" bg="w-5" p="y-1 x-2"  border="~ w-5 rounded">
                     {{ language }}
                 </span>
-                <span @click="previewToggle()" v-if="language == 'html' && !code.includes('<!---->')"  w="4" h="4" cursor="pointer" :class="[ previewState ? 'bg-w-20 hover:bg-opacity-30' : 'bg-w-5 hover:bg-opacity-10']" p="y-1 x-2"  border="~ w-5 hover:w-10 rounded" flex="~" justify="center" items="center">
-                    <div v-if="previewState" class="i-mdi-eye-off"></div>
-                    <div v-else class="i-ic-baseline-remove-red-eye"></div>
-                </span>
                 <span @click="copy()" w="2" h="4" class="invisible group-hover:visible" cursor="pointer" bg="w-5 hover:opacity-10" p="y-1 x-2"  border="~ w-5 hover:w-10 rounded" flex="~" items="center">
-                    <div v-if="copied" class="i-fa6-solid-clipboard-check"></div>
-                    <div v-else class="i-fa6-solid-clipboard"></div>
+                    <IconsClipboardCheck v-if="copied" class="i-fa6-solid-clipboard-check"></IconsClipboardCheck>
+                    <IconsClipboard v-else class="i-fa6-solid-clipboard"></IconsClipboard>
                 </span>
             </div>
             <div un-text="md white" p="6" flex="~ col" items="start">
-                <div v-if="previewState && (language == 'html')"
-                    bg="primary"
-                    p="4"
-                    border="rounded-lg"
+                <div v-if="language == 'html'"
+                    border="~ primary opacity-10 rounded-lg dashed"
+                    w="full"
+                    mb="6"
+                    h="full"
                     flex="~ col"
                 >
-                    <component :is="parsedCode" />
+                    <div p="6" w="fit" h="full">
+                        <component :is="parsedCode" />
+                    </div>
                 </div>
-                <slot v-else />
+                <div class="break-words" w="full">
+                    <slot />
+                </div>
             </div>
         </ClientOnly>
     </div>
