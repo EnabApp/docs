@@ -1,7 +1,7 @@
 <template>
   <main class="px-1 mx-auto max-w-full lg:max-w-7xl lg:px-6" h="screen">
     <Header :hasNavigations="sidebarNavigations?.length > 0" />
-    <div flex="~ gap-4" justify="between" position="relative" h="cuts">
+    <div flex="~ gap-4" justify="between" position="relative" class="h-[calc(100vh-75px)]">
       <Sidebar v-if="sidebarNavigations" :navs="sidebarNavigations" />
       <div flex="grow" px="6 lg:10" mb="0 lg:10" overflow="y-scroll">
         <NuxtPage />
@@ -91,5 +91,9 @@ th, td {
   border: 0 !important;
 }
 
+body {
+  background-color: rgb(12, 12, 13);
+  color: #333;
+}
 
 </style>

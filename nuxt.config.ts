@@ -1,5 +1,5 @@
 import { defineNuxtConfig } from 'nuxt'
-import { uno } from './unocss/index'
+// import { uno } from './unocss/index'
  
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -30,7 +30,7 @@ export default defineNuxtConfig({
 
 
   // UnoCSS Configurations
-  unocss: uno,
+  // unocss: uno,
 
   content: {
     highlight: {

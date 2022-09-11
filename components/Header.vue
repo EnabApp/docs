@@ -35,8 +35,8 @@
     
             <!-- Mobile Customization -->
             <div class="flex gap-3 lg:hidden" justify="end">
-                <div v-if="hasNavigations" @click="toggleMobileSidebar()" h="8" w="8" un-text="secondary active:primary hover:primary" class="i-ri-menu-fold-fill"></div>
-                <div @click="mobileMenuToggle()" h="8" w="8" un-text="secondary active:primary hover:primary" class="i-ri-menu-line"></div>
+                <IconMenuFold v-if="hasNavigations" @click="toggleMobileSidebar()" h="8" w="8" un-text="secondary active:primary hover:primary"></IconMenuFold>
+                <IconMenuLine @click="mobileMenuToggle()" h="8" w="8" un-text="secondary active:primary hover:primary"></IconMenuLine>
             </div>
     
             
