@@ -6,7 +6,7 @@
       <div flex="grow" px="6 lg:10" mb="0 lg:10" overflow="y-scroll">
         <NuxtPage />
       </div>
-      
+
       <Contents v-if="sidebarNavigations" :navs="sidebarNavigations" />
     </div>
   </main>
