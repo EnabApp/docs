@@ -12,8 +12,8 @@
                     {{ language }}
                 </span>
                 <span @click="copy()" w="2" h="4" class="invisible group-hover:visible" cursor="pointer" bg="w-5 hover:opacity-10" p="y-1 x-2"  border="~ w-5 hover:w-10 rounded" flex="~" items="center">
-                    <IconsClipboardCheck v-if="copied" class="i-fa6-solid-clipboard-check"></IconsClipboardCheck>
-                    <IconsClipboard v-else class="i-fa6-solid-clipboard"></IconsClipboard>
+                    <IconsClipboardCheck v-if="copied"></IconsClipboardCheck>
+                    <IconsClipboard v-else></IconsClipboard>
                 </span>
             </div>
             <div un-text="md white" p="6" flex="~ col" items="start">

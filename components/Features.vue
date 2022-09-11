@@ -15,32 +15,32 @@
         {
             title: "One Minute to Start",
             description: "You can start with a simple template or with a custom one.",
-            icon: "i-material-symbols-timer-off-outline-rounded"
+            icon: "IconTimerOff"
         },
         {
             title: "Easy to Use",
             description: "Easy to use Enab with the best web technologies.",
-            icon: "i-icon-park-outline-easy"
+            icon: "IconFingerTip"
         },
         {
             title: "Simple to Maintain",
             description: "You can easily update your app with the latest version of Enab.",
-            icon: "i-material-symbols-rocket-launch-outline"
+            icon: "IconRocketLanuch"
         },
         {
             title: "Wonderful Components",
             description: "We have created a beautiful UI with many components.",
-            icon: "i-bx-bxs-component"
+            icon: "IconComponents"
         },
         {
             title: "Powerful Customization",
             description: "You can easy custom your app with a highly customizable functions.",
-            icon: "i-material-symbols-settings-input-component-outline"
+            icon: "IconSettingsInput"
         },
         {
             title: "Powerful API",
             description: "You can use your own API to connect your app with your own backend.",
-            icon: "i-file-icons-api-blueprint"
+            icon: "IconFileAplBluePrint"
         }
     ])
 </script>

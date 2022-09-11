@@ -3,7 +3,7 @@
       <ContentDoc v-slot="{ doc }">
         <ClientOnly>
           <template #not-found>
-            <div w="20" h="20" class="i-line-md-loading-loop"></div>
+            <IconLoading w="20" h="20" />
           </template>
           <div v-if="$route.path !== '/'">
             <h1 un-text="4xl white" mt="5">{{ doc.title }}</h1>

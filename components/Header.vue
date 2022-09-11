@@ -27,8 +27,12 @@
     
     
             <div class="hidden lg:flex" flex="basis-1/3 gap-4" justify="end">
-                <a href="https://discord.gg/5hR4d77E" target="_blank" h="7" w="7" un-text="secondary hover:primary" class="i-fa-brands-discord"></a>
-                <a href="https://github.com/EnabApp/docs" target="_blank" h="7" w="7" un-text="secondary hover:primary" class="i-mdi-github"></a>
+                <a href="https://discord.gg/5hR4d77E" target="_blank">
+                    <IconDiscord h="7" w="7" un-text="secondary hover:primary" />
+                </a>
+                <a href="https://github.com/EnabApp/docs" target="_blank">
+                    <IconsGitHub h="7" w="7" un-text="secondary hover:primary" />
+                </a>
             </div>
     
     
@@ -60,8 +64,12 @@
                         </NuxtLink>
                     </div>
                 </ContentNavigation>
-                <a href="https://discord.gg/5hR4d77E" target="_blank" h="10" w="10" un-text="secondary hover:primary" class="i-fa-brands-discord"></a>
-                <a href="https://github.com/EnabApp/docs" target="_blank" h="10" w="10" un-text="secondary hover:primary" class="i-mdi-github"></a>
+                <a href="https://discord.gg/5hR4d77E" target="_blank">
+                    <IconDiscord h="10" w="10" un-text="secondary hover:primary" />
+                </a>
+                <a href="https://github.com/EnabApp/docs" target="_blank">
+                    <IconsGitHub h="10" w="10" un-text="secondary hover:primary" />
+                </a>
             </div>
         </Transition>
 
