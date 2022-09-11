@@ -17,7 +17,7 @@
                 </span>
             </div>
             <div un-text="md white" p="6" flex="~ col" items="start">
-                <div v-if="language == 'html'"
+                <!-- <div v-if="language == 'html'"
                     border="~ primary opacity-10 rounded-lg dashed"
                     w="full"
                     mb="6"
@@ -27,7 +27,7 @@
                     <div p="6" w="fit" h="full">
                         <component :is="parsedCode" />
                     </div>
-                </div>
+                </div> -->
                 <div class="break-words" w="full">
                     <slot />
                 </div>
@@ -50,9 +50,9 @@ const copied = ref(false)
 
 const [ previewState, previewToggle ] = useToggle(false)
 
-const parsedCode = {
-  template: props.code
-}
+// const parsedCode = {
+//   template: props.code
+// }
 </script>
 
 
