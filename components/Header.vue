@@ -7,7 +7,7 @@
             </NuxtLink>
     
             <!-- Navigations -->
-            <div class="hidden lg:flex" flex="gap-6 basis-1/3" justify="center">
+            <div class="hidden lg:flex"  flex="lg:~ gap-6 basis-1/3" justify="center">
                 <ContentNavigation v-slot="{ navigation }">
                     <div v-for="link of navigation" :key="link._path">
                         <NuxtLink

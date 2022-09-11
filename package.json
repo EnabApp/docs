@@ -14,7 +14,11 @@
   },
   "dependencies": {
     "@enab/core": "^1.8.22-beta.18",
+    "@unocss/inspector": "^0.45.18",
     "@unocss/nuxt": "^0.45.13",
+    "@unocss/preset-attributify": "^0.45.18",
+    "@unocss/preset-typography": "^0.45.18",
+    "@unocss/preset-web-fonts": "^0.45.18",
     "shiki": "^0.11.1"
   }
 }
