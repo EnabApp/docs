@@ -3,7 +3,7 @@ import { defineNuxtConfig } from 'nuxt'
  
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  // ssr: false,
+  ssr: false,
 
   modules: [
     '@enab/core',
@@ -17,12 +17,12 @@ export default defineNuxtConfig({
     dirs: ['~/components']
   },
 
-  // hooks: {
-  //   'vite:extendConfig': (config, { isClient, isServer }) => {
-  //     if (isClient)
-  //       config.resolve.alias.vue = 'vue/dist/vue.esm-bundler.js'
-  //   },
-  // },
+  hooks: {
+    'vite:extendConfig': (config, { isClient, isServer }) => {
+      if (isClient)
+        config.resolve.alias.vue = 'vue/dist/vue.esm-bundler.js'
+    },
+  },
 
   core: {
     isCore: false
