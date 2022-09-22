@@ -96,4 +96,9 @@ body {
   color: #333;
 }
 
+code span {
+  user-select: all;
+  cursor: pointer;
+}
+
 </style>
