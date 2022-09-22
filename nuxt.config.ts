@@ -7,9 +7,9 @@ export default defineNuxtConfig({
 
   modules: [
     '@enab/core',
-    '@nuxt/content',
     '@unocss/nuxt',
     '@vueuse/nuxt',
+    '@nuxt/content',
   ],
 
   components: {
@@ -17,12 +17,12 @@ export default defineNuxtConfig({
     dirs: ['~/components']
   },
 
-  hooks: {
-    'vite:extendConfig': (config, { isClient, isServer }) => {
-      if (isClient)
-        config.resolve.alias.vue = 'vue/dist/vue.esm-bundler.js'
-    },
-  },
+  // hooks: {
+  //   'vite:extendConfig': (config, { isClient, isServer }) => {
+  //     if (isClient)
+  //       config.resolve.alias.vue = 'vue/dist/vue.esm-bundler.js'
+  //   },
+  // },
 
   core: {
     isCore: false
