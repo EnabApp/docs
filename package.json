@@ -8,12 +8,13 @@
   },
   "devDependencies": {
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
+    "@nuxtjs/color-mode": "^3.1.6",
     "@vueuse/core": "^9.1.1",
     "@vueuse/nuxt": "^9.1.1",
-    "nuxt": "3.0.0-rc.8"
+    "nuxt": "^3.0.0-rc.11"
   },
   "dependencies": {
-    "@enab/core": "^1.8.22-beta.18",
+    "@enab/core": "^1.8.22-beta.22",
     "@unocss/inspector": "^0.45.18",
     "@unocss/nuxt": "^0.45.13",
     "@unocss/preset-attributify": "^0.45.18",

@@ -11,13 +11,13 @@ const props = defineProps(['title', 'icon', 'color'])
 const styleColor = computed( () => {
     switch (props.color){
         case 'success':
-            return 'text-white bg-success-600 bg-opacity-15'
+            return 'text-white bg-gradient-to-r from-success-600 to-success-700 bg-opacity-35'
         case 'error':
-            return 'text-error bg-error-600 bg-opacity-15'
+            return 'text-error-200 bg-gradient-to-r from-error-600 to-error-700 bg-opacity-35'
         case 'warning':
-            return 'text-warning bg-warning-600 bg-opacity-15'
+            return 'text-warning-200 bg-gradient-to-r from-warning-600 to-warning-700 bg-opacity-35'
         case 'info':
-            return 'text-info bg-info-600 bg-opacity-15'
+            return 'text-info-200 bg-gradient-to-r from-info-600 to-info-700 bg-opacity-35'
         default:
             return 'bg-w-5 text-white'
     }

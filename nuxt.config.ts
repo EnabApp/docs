@@ -3,14 +3,20 @@ import { defineNuxtConfig } from 'nuxt'
  
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  // ssr: false,
+  ssr: false,
 
   modules: [
     '@enab/core',
-    '@nuxt/content',
     '@unocss/nuxt',
     '@vueuse/nuxt',
+    '@nuxt/content',
+    '@nuxtjs/color-mode'
   ],
+
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
+  },
 
   components: {
     global: true,
