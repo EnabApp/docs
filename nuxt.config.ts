@@ -10,7 +10,13 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     '@nuxt/content',
+    '@nuxtjs/color-mode'
   ],
+
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
+  },
 
   components: {
     global: true,
